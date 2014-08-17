@@ -3,11 +3,11 @@ require 'spec_helper'
 describe "Statics pages" do
   describe "Home page" do
     it "should have the content 'Sample App'" do
-      visit '/statics_pages/home'
+      visit '/'
       expect(page).to have_content('Sample App')
     end
     it "should have the right title 'Home'" do
-    	visit '/statics_pages/home'
+    	visit '/'
     	expect(page).to have_title('Ruby on Rails Tutorial Sample App | Home')
     end
   end
