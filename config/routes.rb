@@ -1,4 +1,7 @@
 Proyecto::Application.routes.draw do
+  get "statics_pages/home"
+  get "statics_pages/help"
+  get "statics_pages/about"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
