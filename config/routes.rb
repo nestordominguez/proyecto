@@ -1,7 +1,9 @@
 Proyecto::Application.routes.draw do
   
+  resources :users
   root 'statics_pages#home'
   
+  #match '/user',      to: 'users#show',             via: 'get'
   match '/signup',    to: 'users#new',              via: 'get'
   match '/help',      to: 'statics_pages#help',     via: 'get'
   match '/about',     to: 'statics_pages#about',    via: 'get'
